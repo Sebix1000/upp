@@ -1,1 +1,3 @@
-Plik testowy
+Ćwiczenia wykonywałem z podglądem stron 
+jak mają wyglądać i robiłem je po prostu jeden do jeden, miałem już wcześniej 
+w technikum budowę stron internetowych w html więc dosyć sprawnie mi to poszło.
