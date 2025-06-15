@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotel Feedback Form</title>
+    </head>
+    <body>
+        <h1>Hotel Feedback Form</h1>
+        <p>Thank you for staying with us. Please provide feedback on your recent stay.</p>
+        <form method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name (required)</label>
+            <input type="text" placeholder="Sebastian">
+            <label>Email address (required)</label>
+            <input type="email" placeholder="example@email.com">
+            <label>Age (optional)</label>
+            <input type="number">
+        </fieldset>
+        <fieldset>
+            <legend>Was this your first time at our hotel?</legend>
+            <label>Yes</label>
+            <input type="radio" id="radio">
+            <label>No</label>
+            <input type="radio" id="radio">
+        </fieldset>
+        <fieldset>
+            <legend>Why did you choose to stay at our hotel?(Check all that apply)</legend>
+            <label>Social Media Ads</label>
+            <input type="checkbox" id="check">
+            <label>Personal Recommendation</label>
+            <input type="checkbox" id="check">
+            <label>Location</label>
+            <input type="checkbox" id="check">
+            <label>Reputation</label>
+            <input type="checkbox" id="check">
+            <label>Price</label>
+            <input type="checkbox" id="check">
+        </fieldset>
+        <fieldset>
+            <legend>Ratings</legend>
+            <label>How was the service?</label>
+            <select>
+                <option id="Excellent">Excellent</option>
+                <option id="VeryGood">Very Good</option>
+                <option id="Good">Good</option>
+                <option id="Satisfactory">Satisfactory</option>
+                <option id="Poor">Poor</option>
+            </select>
+            <label>How was the food?</label>
+            <select>
+                <option id="Excellent">Excellent</option>
+                <option id="VeryGood">Very Good</option>
+                <option id="Good">Good</option>
+                <option id="Satisfactory">Satisfactory</option>
+                <option id="Poor">Poor</option>
+            </select>
+        </fieldset>
+        <p>Other comments?<textarea cols="30" rows="10" name="comments" id="comments"></textarea><input type="submit"></p>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colored Boxes</title><link rel="stylesheet" data-href="styles.css">
+<style class="fcc-injected-styles">
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.color-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.color1 {
+    background-color: #33FF57;
+}
+
+.color2 {
+    background-color: rgb(128,0,128);
+}
+
+.color3 {
+    background-color: orange;
+}
+
+.color4 {
+    background-color: hsl(59, 61%, 26%);
+}
+
+.color5 {
+    background-color: red;
+}</style>
+</head>
+<body>
+    <h1>Colored Boxes</h1>
+    <div class="color-grid"> 
+        <div class="color-box color1"></div>
+        <div class="color-box color2"></div>
+        <div class="color-box color3"></div>
+        <div class="color-box color4"></div>
+        <div class="color-box color5"></div>
+    </div>
+
+</body>
+</html>
