@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical Documentation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100vh;
+      background-color: #f4f4f4;
+      border-right: 2px solid #ccc;
+      padding: 1rem;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    #navbar a.nav-link {
+      display: block;
+      padding: 0.5rem 0;
+      color: #333;
+      text-decoration: none;
+      border-left: 4px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    #navbar a.nav-link:hover {
+      border-left-color: #007acc;
+      background-color: #e0f0ff;
+    }
+    #main-doc {
+      margin-left: 270px; 
+      padding: 2rem;
+      max-width: 800px;
+      flex-grow: 1;
+    }
+
+    section.main-section {
+      margin-bottom: 3rem;
+    }
+
+    section.main-section header {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+      }
+
+      #main-doc {
+        margin-left: 0;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Technical Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+    <a class="nav-link" href="#JavaScript_Fundamentals">JavaScript Fundamentals</a>
+    <a class="nav-link" href="#Accessibility_Standards">Accessibility Standards</a>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>Welcome to this technical documentation page. Here you will find detailed explanations on web development topics.</p>
+      <p>Our goal is to provide concise and practical knowledge.</p>
+      <p>This page contains examples and best practices.</p>
+      <ul>
+        <li>Clear navigation</li>
+        <li>Relevant content</li>
+        <li>Responsive design</li>
+      </ul>
+      <code>&lt;!DOCTYPE html&gt;</code>
+    </section>
+
+    <section id="HTML_Basics" class="main-section">
+      <header>HTML Basics</header>
+      <p>HTML stands for HyperText Markup Language.</p>
+      <p>It is the backbone of webpages.</p>
+      <code>&lt;html&gt;, &lt;head&gt;, &lt;body&gt;</code>
+      <ul>
+        <li>Elements</li>
+        <li>Attributes</li>
+      </ul>
+    </section>
+
+    <section id="CSS_Styling" class="main-section">
+      <header>CSS Styling</header>
+      <p>CSS controls the look and feel of the website.</p>
+      <p>You can style colors, layouts, and animations.</p>
+      <code>color: blue;</code>
+      <code>display: flex;</code>
+      <ul>
+        <li>Selectors</li>
+        <li>Properties</li>
+      </ul>
+    </section>
+
+    <section id="JavaScript_Fundamentals" class="main-section">
+      <header>JavaScript Fundamentals</header>
+      <p>JavaScript adds interactivity to webpages.</p>
+      <p>It can manipulate HTML and CSS dynamically.</p>
+      <code>document.querySelector()</code>
+      <code>addEventListener()</code>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+      </ul>
+    </section>
+
+    <section id="Accessibility_Standards" class="main-section">
+      <header>Accessibility Standards</header>
+      <p>Accessibility ensures websites are usable by everyone.</p>
+      <p>Follow semantic HTML and ARIA roles.</p>
+      <code>role="navigation"</code>
+      <code>alt="description"</code>
+      <ul>
+        <li>Screen readers</li>
+        <li>Keyboard navigation</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
